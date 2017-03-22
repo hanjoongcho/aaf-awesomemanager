@@ -10,13 +10,13 @@ android {
 //    v1.0.1: 2016.10.20 / 매뉴얼 수정
 //    v1.1.0: 2016.10.25 / 사용자 정의 문자선택 기능 추가, 매뉴얼 수정
     compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    buildToolsVersion '25.0.0'
     defaultConfig {
         applicationId "me.blog.korn123.awesomemanager"
         minSdkVersion 19
         targetSdkVersion 24
-        versionCode 10
-        versionName "1.1.7"
+        versionCode 11
+        versionName "1.1.8"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
