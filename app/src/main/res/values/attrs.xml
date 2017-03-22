@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="customAttr" format="string"/>
+        <attr name="customAttr2" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomTheme">
+        <attr name="customTextViewStyle" format="reference"/>
+    </declare-styleable>
+
+</resources>

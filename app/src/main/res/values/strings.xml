@@ -1,0 +1,183 @@
+<resources>
+
+    <!--공통 정보-->
+    <string name="app_name">Awesome Manager</string>
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--환경 설정-->
+    <string-array name="list_theme">
+        <item>기본</item>
+        <item>보라색</item>
+    </string-array>
+    <string-array name="list_theme_values">
+        <item>basic</item>
+        <item>purple</item>
+    </string-array>
+
+    <string-array name="maximumMember_arrays">
+        <item>20</item>
+        <item>19</item>
+        <item>18</item>
+        <item>17</item>
+        <item>16</item>
+        <item>15</item>
+        <item>14</item>
+        <item>13</item>
+        <item>12</item>
+        <item>11</item>
+        <item>10</item>
+        <item>9</item>
+        <item>8</item>
+        <item>7</item>
+    </string-array>
+
+    <string name="playground_kind_prompt">수업장소 형태를 선택하세요</string>
+    <string-array name="playground_kind_arrays">
+        <item>지점 운동장</item>
+        <item>지점 체육관</item>
+        <item>학교 운동장</item>
+        <item>학교 체육관</item>
+        <item>기타</item>
+    </string-array>
+
+    <string name="branch_prompt">소속 지점을 선택하세요</string>
+    <string-array name="branch_arrays">
+        <item>판교점</item>
+        <item>야탑점</item>
+    </string-array>
+
+    <string name="login_type_prompt">로그인 유형 선택</string>
+    <string-array name="login_type_arrays">
+        <item>교사 로그인</item>
+        <item>팀원 로그인(추후 제공)</item>
+        <item>부모님 로그인(추후 제공)</item>
+    </string-array>
+
+    <string name="coach_name_prompt">담당선생님 선택</string>
+    <string-array name="coach_name_arrays">
+        <item>김축구</item>
+        <item>이축구</item>
+        <item>강농구</item>
+    </string-array>
+
+    <string-array name="school_name_arrays">
+        <item>서원초등학교</item>
+        <item>서원중학교</item>
+        <item>수지초등학교</item>
+    </string-array>
+
+    <string name="school_grade_prompt">학년 선택</string>
+    <string-array name="school_grade_arrays">
+        <item>1학년</item>
+        <item>2학년</item>
+        <item>3학년</item>
+        <item>4학년</item>
+        <item>5학년</item>
+        <item>6학년</item>
+    </string-array>
+
+    <string-array name="ground_location_arrays">
+        <item>서원초운동장</item>
+        <item>판교점체육관</item>
+        <item>수지점체육관</item>
+    </string-array>
+
+    <string-array name="event_arrays">
+        <item>생활체육</item>
+        <item>축구</item>
+        <item>농구</item>
+        <item>야구</item>
+        <item>수영</item>
+    </string-array>
+
+    <string-array name="gender_arrays">
+        <item>남자</item>
+        <item>여자</item>
+        <item>혼성</item>
+    </string-array>
+
+    <string-array name="year_arrays">
+        <item>2016년</item>
+        <item>2015년</item>
+        <item>2014년</item>
+        <item>2013년</item>
+        <item>2012년</item>
+        <item>2011년</item>
+        <item>2010년</item>
+        <item>2009년</item>
+        <item>2008년</item>
+        <item>2007년</item>
+        <item>2006년</item>
+        <item>2005년</item>
+        <item>2004년</item>
+        <item>2003년</item>
+        <item>2002년</item>
+        <item>2001년</item>
+        <item>2000년</item>
+        <item>1999년</item>
+        <item>1998년</item>
+        <item>1997년</item>
+    </string-array>
+
+    <string-array name="month_arrays">
+        <item>1월</item>
+        <item>2월</item>
+        <item>3월</item>
+        <item>4월</item>
+        <item>5월</item>
+        <item>6월</item>
+        <item>7월</item>
+        <item>8월</item>
+        <item>9월</item>
+        <item>10월</item>
+        <item>11월</item>
+        <item>12월</item>
+    </string-array>
+
+    <string-array name="day_arrays">
+        <item>1일</item>
+        <item>2일</item>
+        <item>3일</item>
+        <item>4일</item>
+        <item>5일</item>
+        <item>6일</item>
+        <item>7일</item>
+        <item>8일</item>
+        <item>9일</item>
+        <item>10일</item>
+        <item>11일</item>
+        <item>12일</item>
+        <item>13일</item>
+        <item>14일</item>
+        <item>15일</item>
+        <item>16일</item>
+        <item>17일</item>
+        <item>18일</item>
+        <item>19일</item>
+        <item>20일</item>
+        <item>21일</item>
+        <item>22일</item>
+        <item>23일</item>
+        <item>24일</item>
+        <item>25일</item>
+        <item>26일</item>
+        <item>27일</item>
+        <item>28일</item>
+        <item>29일</item>
+        <item>30일</item>
+        <item>31일</item>
+    </string-array>
+
+    <string name="attendance_prompt">출결 여부를 선택하세요</string>
+    <string-array name="attendance_arrays">
+        <item>출석</item>
+        <item>결석</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="@dimen/common_normal_text"
+            android:textColor="@color/white"
+            android:text="출결처리 대상팀 조회"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_title_height"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/rectangle_with_radius_type_d" />
+
+        <SearchView
+            android:layout_marginTop="10dp"
+            android:queryHint="검색"
+            android:background="@drawable/rectangle_with_radius"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/team_add_card_height"
+            android:id="@+id/teamAttendanceSearchView"
+            android:layout_gravity="center_horizontal"
+            android:gravity="right" />
+
+        <ListView
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_with_radius"
+            android:id="@+id/listTeam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

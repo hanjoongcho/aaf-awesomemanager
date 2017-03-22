@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout style="@style/CommonLinearLayoutVerticalMatchParentAll">
+
+            <TextView
+                style="@style/CommonTextViewTitle"
+                android:text="수업장소 상세정보 수정" />
+
+            <LinearLayout style="@style/PlaygroundAddActivityLinearLayout">
+                <TextView
+                    style="@style/PlaygroundAddActivityTextView"
+                    android:text="수업장소 이름" />
+                <EditText
+                    style="@style/PlaygroundAddActivityEditText"
+                    android:id="@+id/playgroundNameInput" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/PlaygroundAddActivityLinearLayout">
+                <TextView
+                    style="@style/PlaygroundAddActivityTextView"
+                    android:text="소속 지점" />
+                <LinearLayout style="@style/PlaygroundAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/PlaygroundAddActivitySpinner"
+                        android:id="@+id/branchSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/PlaygroundAddActivityLinearLayout">
+                <TextView
+                    style="@style/PlaygroundAddActivityTextView"
+                    android:text="수업장소 형태" />
+                <LinearLayout style="@style/PlaygroundAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/PlaygroundAddActivitySpinner"
+                        android:id="@+id/playgroundKindSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/PlaygroundAddActivityLinearLayout">
+                <TextView
+                    style="@style/PlaygroundAddActivityTextView"
+                    android:text="주소" />
+                <EditText
+                    style="@style/PlaygroundEditActivityEditText"
+                    android:id="@+id/addressInput" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/PlaygroundAddActivityLinearLayout"
+                android:layout_height="80dp">
+                <TextView
+                    style="@style/PlaygroundAddActivityTextView"
+                    android:text="기타정보" />
+                <EditText
+                    style="@style/PlaygroundEditActivityEditText"
+                    android:id="@+id/etcInfoInput"
+                    android:hint="기타정보를 입력하세요"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <Button
+                style="@style/CommonButtonMatchParentWidth"
+                android:onClick="editPlayground"
+                android:id="@+id/submit"
+                android:text="저장하기" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

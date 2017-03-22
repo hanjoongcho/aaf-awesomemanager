@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout style="@style/CommonLinearLayoutVerticalMatchParentAll">
+            <TextView
+                style="@style/CommonTextViewTitle"
+                android:text="팀원 상세정보" />
+
+            <TableLayout style="@style/MemberAddStep2ActivityLinearLayout">
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="이름" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/memberName" />
+                </TableRow>
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="생년월일" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/birthday" />
+                </TableRow>
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="학교" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/school" />
+                </TableRow>
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="학년" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/grade" />
+                </TableRow>
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="성별" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/memberGender" />
+                </TableRow>
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="출결알림 핸드폰" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/alarmCellphone" />
+                </TableRow>
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="소속팀" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/teamName" />
+                </TableRow>
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="소속팀 교사" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/coachName" />
+                </TableRow>
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="소속팀 종목" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/event" />
+                </TableRow>
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="소속팀 성별" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/teamGender" />
+                </TableRow>
+
+                <TableRow style="@style/MemberAddStep2ActivityTableRow">
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView"
+                        android:text="소속팀 인원" />
+                    <TextView
+                        style="@style/MemberAddStep2ActivityTextView2"
+                        android:id="@+id/maximumMember" />
+                </TableRow>
+
+            </TableLayout>
+
+            <Button
+                style="@style/CommonButtonMatchParentWidth"
+                android:onClick="onClick"
+                android:text="팀원정보 수정하기"
+                android:id="@+id/memberEdit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

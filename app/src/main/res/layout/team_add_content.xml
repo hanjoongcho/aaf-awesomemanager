@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout style="@style/CommonLinearLayoutVerticalMatchParentAll">
+
+            <TextView
+                style="@style/CommonTextViewTitle"
+                android:text="팀 등록" />
+
+            <LinearLayout style="@style/TeamAddActivityLinearLayout">
+                <TextView
+                    style="@style/CommonTextViewCountInfo"
+                    android:id="@+id/infoView">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout style="@style/TeamAddActivityLinearLayout">
+                <TextView
+                    style="@style/TeamAddActivityTextView"
+                    android:text="팀이름" />
+                <EditText
+                    style="@style/TeamAddActivityEditText"
+                    android:id="@+id/teamNameInput"
+                    android:hint="팀 이름을 입력하세요." />
+            </LinearLayout>
+
+            <LinearLayout style="@style/TeamAddActivityLinearLayout">
+                <TextView
+                    style="@style/TeamAddActivityTextView"
+                    android:text="담당교사" />
+                <LinearLayout style="@style/TeamAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/TeamAddActivitySpinner"
+                        android:id="@+id/coachSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/TeamAddActivityLinearLayout">
+                <TextView
+                    style="@style/TeamAddActivityTextView"
+                    android:text="학교명" />
+                <LinearLayout style="@style/TeamAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/TeamAddActivitySpinner"
+                        android:id="@+id/schoolSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/TeamAddActivityLinearLayout">
+                <TextView
+                    style="@style/TeamAddActivityTextView"
+                    android:text="학년" />
+                <LinearLayout style="@style/TeamAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/TeamAddActivitySpinner"
+                        android:id="@+id/gradeSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/TeamAddActivityLinearLayout">
+                <TextView
+                    style="@style/TeamAddActivityTextView"
+                    android:text="소속지점" />
+                <LinearLayout style="@style/TeamAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/TeamAddActivitySpinner"
+                        android:id="@+id/branchSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/TeamAddActivityLinearLayout">
+                <TextView
+                    style="@style/TeamAddActivityTextView"
+                    android:text="수업장소" />
+                <LinearLayout style="@style/TeamAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/TeamAddActivitySpinner"
+                        android:id="@+id/groundSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/TeamAddActivityLinearLayout">
+                <TextView
+                    style="@style/TeamAddActivityTextView"
+                    android:text="종목" />
+                <LinearLayout style="@style/TeamAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/TeamAddActivitySpinner"
+                        android:id="@+id/eventSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/TeamAddActivityLinearLayout">
+                <TextView
+                    style="@style/TeamAddActivityTextView"
+                    android:text="성별" />
+                <LinearLayout style="@style/TeamAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/TeamAddActivitySpinner"
+                        android:id="@+id/genderSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/TeamAddActivityLinearLayout">
+                <TextView
+                    style="@style/TeamAddActivityTextView"
+                    android:text="최대인원" />
+                <LinearLayout style="@style/TeamAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/TeamAddActivitySpinner"
+                        android:id="@+id/maximumMemberSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TeamAddActivityLinearLayout"
+                android:layout_height="80dp">
+                <TextView
+                    style="@style/TeamAddActivityTextView"
+                    android:text="특이사항" />
+                <EditText
+                    style="@style/TeamAddActivityEditText"
+                    android:id="@+id/etcInfo"
+                    android:hint="추가정보를 입력하세요\nex) 서원초 + 상현초 혼합팀임"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <Button
+                style="@style/CommonButtonMatchParentWidth"
+                android:onClick="registerTeam"
+                android:id="@+id/submit"
+                android:text="등록하기" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="기본설정">
+        <ListPreference
+            android:key="app_theme"
+            android:title="테마"
+            android:summary="%s"
+            android:defaultValue="basic"
+            android:entries="@array/list_theme"
+            android:entryValues="@array/list_theme_values"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+    </PreferenceCategory>-->
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="잠금기능 설정">
+        <Preference
+            android:title="잠금번호 변경">
+            <intent android:action="aaf.awesome.manger.intent.action.PASSWORD"/>
+        </Preference>
+        <!--<Preference
+            android:title="Open Contacts">
+            <intent android:action="aaf.awesome.manger.intent.action.CONTACTS"/>
+        </Preference>-->
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="데이터 관리">
+        <Preference
+            android:key="info_message"
+            android:title="핸드폰 변경 시 주의사항"
+            android:summary="핸드폰 변경 시 자료 옮기는 방법">
+        </Preference>
+        <Preference
+            android:key="export_google_drive"
+            android:title="구글 계정으로 백업"
+            android:summary="구글 드라이브로 데이터를 백업">
+        </Preference>
+        <Preference
+            android:key="import_google_drive"
+            android:title="구글 계정에서 복구"
+            android:summary="구글 드라이브에 백업된 데이터를 복구">
+        </Preference>
+        <!--<Preference
+            android:title="주기적 자동 백업"
+            android:summary="하지않음">
+        </Preference>-->
+        <!--<Preference
+            android:title="테스트 데이터 생성"
+            android:summary="테스트를 위한 샘플 데이터를 생성합니다.">
+            <intent android:action="aaf.awesome.manger.intent.action.MANAGE_DUMMY_DATA"/>
+        </Preference>-->
+        <Preference
+            android:key="init_data"
+            android:title="데이터 초기화"
+            android:summary="입력된 모든 데이터를 초기화 합니다.">
+        </Preference>
+    </PreferenceCategory>
+
+    <!--
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="검색결과 정렬">
+        <Preference
+            android:key="info_message"
+            android:title="출석정보 조회"
+            android:summary="출석정보 조회 결과를 설정값으로 정렬 ">
+        </Preference>
+        <Preference
+            android:key="info_message"
+            android:title="팀 조회"
+            android:summary="팀 조회 결과를 설정값으로 정렬 ">
+        </Preference>
+        <Preference
+            android:key="info_message"
+            android:title="팀원 조회"
+            android:summary="팀원 조회 결과를 설정값으로 정렬 ">
+        </Preference>
+    </PreferenceCategory>
+    -->
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="Application 정보">
+        <Preference
+            android:key="aaf_app_version"
+            android:title=""
+            android:summary="">
+        </Preference>
+        <Preference
+            android:key="open_source_licenses"
+            android:title="Open Source Licenses"
+            android:summary="open source software notices">
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

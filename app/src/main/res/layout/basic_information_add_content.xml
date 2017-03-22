@@ -1,0 +1,202 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            style="@style/CommonLinearLayoutVerticalMatchParentAll">
+            <TextView
+                style="@style/CommonTextViewTitle"
+                android:text="항목별 기본선택 정보 추가" />
+
+            <TextView
+                style="@style/BasicInformationAddActivityTextViewTitle"
+                android:text="담당교사" />
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <TextView
+                    style="@style/BasicInformationAddActivityTextView" />
+                <LinearLayout
+                    style="@style/BasicInformationAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/BasicInformationAddActivitySpinner"
+                        android:id="@+id/coachSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <EditText
+                    style="@style/BasicInformationAddActivityEditText"
+                    android:id="@+id/coachInput" />
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/coachAdd"
+                    android:text="추가하기" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/coachDelete"
+                    android:text="삭제하기" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/BasicInformationAddActivityTextViewTitle"
+                android:text="학교명" />
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <TextView
+                    style="@style/BasicInformationAddActivityTextView" />
+                <LinearLayout
+                    style="@style/BasicInformationAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/BasicInformationAddActivitySpinner"
+                        android:id="@+id/schoolSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <EditText
+                    style="@style/BasicInformationAddActivityEditText"
+                    android:id="@+id/schoolInput" />
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/schoolAdd"
+                    android:text="추가하기" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/schoolDelete"
+                    android:text="삭제하기" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/BasicInformationAddActivityTextViewTitle"
+                android:text="학년" />
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <TextView
+                    style="@style/BasicInformationAddActivityTextView" />
+                <LinearLayout
+                    style="@style/BasicInformationAddActivityLinearLayout2" >
+                    <Spinner
+                        style="@style/BasicInformationAddActivitySpinner"
+                        android:id="@+id/gradeSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <EditText
+                    style="@style/BasicInformationAddActivityEditText"
+                    android:id="@+id/gradeInput" />
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/gradeAdd"
+                    android:text="추가하기" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/gradeDelete"
+                    android:text="삭제하기" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/BasicInformationAddActivityTextViewTitle"
+                android:text="소속지점" />
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <TextView
+                    style="@style/BasicInformationAddActivityTextView" />
+                <LinearLayout
+                    style="@style/BasicInformationAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/BasicInformationAddActivitySpinner"
+                        android:id="@+id/branchSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <EditText
+                    style="@style/BasicInformationAddActivityEditText"
+                    android:id="@+id/branchInput" />
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/branchAdd"
+                    android:text="추가하기" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/branchDelete"
+                    android:text="삭제하기" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/BasicInformationAddActivityTextViewTitle"
+                android:text="종목" />
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <TextView
+                    style="@style/BasicInformationAddActivityTextView" />
+                <LinearLayout
+                    style="@style/BasicInformationAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/BasicInformationAddActivitySpinner"
+                        android:id="@+id/eventSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <EditText
+                    style="@style/BasicInformationAddActivityEditText"
+                    android:id="@+id/eventInput" />
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/eventAdd"
+                    android:text="추가하기" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/eventDelete"
+                    android:text="삭제하기" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/BasicInformationAddActivityTextViewTitle"
+                android:text="사용자 정의 문자" />
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <TextView
+                    style="@style/BasicInformationAddActivityTextView" />
+                <LinearLayout
+                    style="@style/BasicInformationAddActivityLinearLayout2">
+                    <Spinner
+                        style="@style/BasicInformationAddActivitySpinner"
+                        android:id="@+id/customMessageSpinner" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <EditText
+                    style="@style/BasicInformationAddActivityEditText"
+                    android:id="@+id/customMessageInput" />
+            </LinearLayout>
+            <EditText
+                android:hint="메시지 내용중에 !팀원! 키워드(키워드 앞뒤에 느낌표를 붙임)가 입력되면 문자발송 시 자동으로 실제 팀원 이름으로 변경됩니다.\n\n메시지 내용중에 !출결정보! 키워드(키워드 앞뒤에 느낌표를 붙임)가 입력되면 문자발송 시 자동으로 실제 출결상태(출석 or 결석)로 변경됩니다.\n\n메시지 내용중에 !수업장소! 키워드(키워드 앞뒤에 느낌표를 붙임)가 입력되면 문자발송 시 자동으로 실제 수업장소로 변경됩니다."
+                android:textColorHint="@color/red7F"
+                android:background="@drawable/rectangle_with_radius"
+                android:layout_marginTop="5dp"
+                android:inputType="textMultiLine"
+                android:layout_height="200dp"
+                android:layout_width="match_parent"
+                android:textSize="13dp"
+                android:id="@+id/customMessageBodyInput" />
+            <LinearLayout style="@style/BasicInformationAddActivityLinearLayout">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/customMessageAdd"
+                    android:text="추가하기" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/customMessageDelete"
+                    android:text="삭제하기" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

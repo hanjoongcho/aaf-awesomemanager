@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout style="@style/CommonLinearLayoutVerticalMatchParentAll">
+
+        <TextView
+            style="@style/CommonTextViewTitle"
+            android:text="수업장소 조회" />
+
+        <SearchView
+            style="@style/CommonSearchView"
+            android:id="@+id/playgroundSearchView" />
+
+        <ListView
+            style="@style/CommonListView"
+            android:id="@+id/listPlayground" />
+
+    </LinearLayout>
+</LinearLayout>

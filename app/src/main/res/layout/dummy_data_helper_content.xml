@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <ScrollView
+        android:id="@+id/mainScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/CommonLinearLayoutVerticalMatchParentAll">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/progressBar"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+            style="@style/CommonTextViewTitle"
+            android:text="테스트용 데이터 입력" />
+
+            <TextView
+            style="@style/BasicInformationAddActivityTextViewTitle"
+            android:text="항목별 기본선택 정보" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/currentBasicInfo"/>
+            <LinearLayout
+                style="@style/BasicInformationAddActivityLinearLayout"
+                android:layout_height="50dp">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/insertAllBasicInfo"
+                    android:text="일괄입력" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/deleteAllBasicInfo"
+                    android:text="일괄삭제" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/BasicInformationAddActivityLinearLayout"
+                android:layout_height="50dp">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/exportBasicInfo"
+                    android:text="export data" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/importBasicInfo"
+                    android:text="import data" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/BasicInformationAddActivityTextViewTitle"
+                android:text="수업장소" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/currentPlayground"/>
+            <LinearLayout
+                style="@style/BasicInformationAddActivityLinearLayout"
+                android:layout_height="50dp">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/insertAllPlayground"
+                    android:text="일괄입력" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/deleteAllPlayground"
+                    android:text="일괄삭제" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/BasicInformationAddActivityLinearLayout"
+                android:layout_height="50dp">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/exportPlayground"
+                    android:text="export data" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/importPlayground"
+                    android:text="import data" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/BasicInformationAddActivityTextViewTitle"
+                android:text="팀정보" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/currentTeam"/>
+            <LinearLayout
+                style="@style/BasicInformationAddActivityLinearLayout"
+                android:layout_height="50dp">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/insertAllTeam"
+                    android:text="일괄입력" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/deleteAllTeam"
+                    android:text="일괄삭제" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/BasicInformationAddActivityLinearLayout"
+                android:layout_height="50dp">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/exportTeam"
+                    android:text="export data" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/importTeam"
+                    android:text="import data" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/BasicInformationAddActivityTextViewTitle"
+                android:text="팀원정보" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/currentMember"/>
+            <LinearLayout
+                style="@style/BasicInformationAddActivityLinearLayout"
+                android:layout_height="50dp">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/insertAllMember"
+                    android:text="일괄입력" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/deleteAllMember"
+                    android:text="일괄삭제" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/BasicInformationAddActivityLinearLayout"
+                android:layout_height="50dp">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/exportMember"
+                    android:text="export data" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/importMember"
+                    android:text="import data" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/BasicInformationAddActivityTextViewTitle"
+                android:text="출석정보" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/currentAttendance"/>
+            <LinearLayout
+                style="@style/BasicInformationAddActivityLinearLayout"
+                android:layout_height="50dp">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/insertAllAttendance"
+                    android:text="일괄입력" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/deleteAllAttendance"
+                    android:text="일괄삭제" />
+            </LinearLayout>
+            <LinearLayout
+                style="@style/BasicInformationAddActivityLinearLayout"
+                android:layout_height="50dp">
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/exportAttendance"
+                    android:text="export data" />
+                <Button
+                    style="@style/BasicInformationAddActivityButton"
+                    android:id="@+id/importAttendance"
+                    android:text="import data" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

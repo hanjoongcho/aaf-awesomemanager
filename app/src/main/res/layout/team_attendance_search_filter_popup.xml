@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:text="팀원 이름"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView4"
+                    android:layout_weight=".2" />
+                <EditText
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="팀원 이름을 입력하세요"
+                    android:id="@+id/editText"
+                    android:layout_weight=".7" />
+                <ImageButton
+                    android:background="@android:color/transparent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:id="@+id/imageButton"
+                    android:layout_weight=".1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:text="팀 이름"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2" />
+                <EditText
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="팀 이름을 입력하세요"
+                    android:layout_weight=".7" />
+                <ImageButton
+                    android:background="@android:color/transparent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:layout_weight=".1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:text="기간"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2" />
+                <EditText
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="시작일"
+                    android:layout_weight=".3" />
+                <TextView
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:gravity="center"
+                    android:text="~"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1" />
+                <EditText
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="종료일"
+                    android:layout_weight=".3" />
+                <ImageButton
+                    android:background="@android:color/transparent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:layout_weight=".1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

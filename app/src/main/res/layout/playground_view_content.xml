@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout style="@style/CommonLinearLayoutVerticalMatchParentAll">
+
+            <TextView
+                style="@style/CommonTextViewTitle"
+                android:text="수업장소 상세정보" />
+
+            <LinearLayout style="@style/PlaygroundViewActivityLinearLayout">
+                <TextView
+                    style="@style/PlaygroundViewActivityTextView"
+                    android:text="수업장소 이름" />
+                <TextView
+                    style="@style/PlaygroundViewActivityTextView2"
+                    android:id="@+id/playgroundName" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/PlaygroundViewActivityLinearLayout">
+                <TextView
+                    style="@style/PlaygroundViewActivityTextView"
+                    android:text="소속 지점" />
+                <TextView
+                    style="@style/PlaygroundViewActivityTextView2"
+                    android:id="@+id/branch"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/PlaygroundViewActivityLinearLayout">
+                <TextView
+                    style="@style/PlaygroundViewActivityTextView"
+                    android:text="수업장소 형태" />
+                <TextView
+                    style="@style/PlaygroundViewActivityTextView2"
+                    android:id="@+id/playgroundKind"     />
+            </LinearLayout>
+
+            <LinearLayout style="@style/PlaygroundViewActivityLinearLayout">
+                <TextView
+                    style="@style/PlaygroundViewActivityTextView"
+                    android:text="주소" />
+                <TextView
+                    style="@style/PlaygroundViewActivityTextView2"
+                    android:id="@+id/address" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/PlaygroundViewActivityLinearLayout"
+                android:layout_height="80dp">
+                <TextView
+                    style="@style/PlaygroundViewActivityTextView"
+                    android:text="기타정보" />
+                <TextView
+                    style="@style/PlaygroundViewActivityTextView2"
+                    android:id="@+id/etcInfo" />
+            </LinearLayout>
+
+            <Button
+                style="@style/CommonButtonMatchParentWidth"
+                android:onClick="onClick"
+                android:text="수정하기"
+                android:id="@+id/playgroundEdit" />
+
+            <Button
+                style="@style/CommonButtonMatchParentWidth"
+                android:onClick="onClick"
+                android:text="삭제하기"
+                android:id="@+id/playgroundDelete" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

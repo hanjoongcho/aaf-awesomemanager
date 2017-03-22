@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+//    버전규약
+//    대기능변경.기능 추가 및 개선.버그수정
+//    major.minor.bugfix
+//    major 버전이 바뀌면 minor & bugfix 0으로 초기화
+//    minor 버전이 바뀌면 bugfix 0으로 초기화
+//    v1.0.0: 2016.10.20
+//    v1.0.1: 2016.10.20 / 매뉴얼 수정
+//    v1.1.0: 2016.10.25 / 사용자 정의 문자선택 기능 추가, 매뉴얼 수정
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+    defaultConfig {
+        applicationId "me.blog.korn123.awesomemanager"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 10
+        versionName "1.1.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig getSigningConfig()
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def date = new Date();
+                    def formattedDate = date.format('yyyyMMddHHmmss')
+                    output.outputFile = new File(output.outputFile.parent,
+                            output.outputFile.name.replace("-release", "-awesome_manager-" + formattedDate)
+                            //for Debug use output.outputFile = new File(output.outputFile.parent,
+                            //                             output.outputFile.name.replace("-debug", "-" + formattedDate)
+                    )
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.google.android.gms:play-services-drive:8.4.0'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    testCompile 'junit:junit:4.12'
+
+    // apache commons dependency
+    compile 'org.apache.commons:commons-lang3:3.0'
+    compile group: 'commons-io', name: 'commons-io', version: '2.4'
+
+    // log dependency
+    compile 'log4j:log4j:1.2.17'
+    compile 'de.mindpipe.android:android-logging-log4j:1.0.2@jar'
+    compile group: 'joda-time', name: 'joda-time', version: '2.1'
+}

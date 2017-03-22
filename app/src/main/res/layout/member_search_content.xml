@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout style="@style/CommonLinearLayoutVerticalMatchParentAll">
+        <TextView
+            style="@style/CommonTextViewTitle"
+            android:text="팀원 조회" />
+
+        <SearchView
+            style="@style/CommonSearchView"
+            android:id="@+id/memberSearchView" />
+
+        <LinearLayout
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_with_radius_type_d"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_title_height">
+            <TextView
+                android:textColor="@color/white"
+                android:text="NO"
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/team_attendance_normal_text"
+                android:gravity="center"
+                />
+            <TextView
+                android:textColor="@color/white"
+                android:text="이름"
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/team_attendance_normal_text"
+                android:gravity="center"
+                />
+            <TextView
+                android:textColor="@color/white"
+                android:text="소속팀"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/team_attendance_normal_text"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <ListView
+            style="@style/CommonListView"
+            android:id="@+id/listMember" />
+    </LinearLayout>
+
+</LinearLayout>

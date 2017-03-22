@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    android:background="@drawable/background03"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout style="@style/CommonLinearLayoutVerticalMatchParentAll"
+        android:gravity="center_vertical">
+        <LinearLayout style="@style/LoginActivityLinearLayout">
+            <LinearLayout
+                style="@style/CommonTextViewSubjectSize5">
+                <ImageView
+                    android:src="@drawable/login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="로그인 유형" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/rectangle_with_radius">
+                <Spinner
+                    android:spinnerMode="dropdown"
+                    android:prompt="@string/login_type_prompt"
+                    android:entries="@array/login_type_arrays"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/loginTypeSpinner"
+                    android:clipChildren="false" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/LoginActivityTextView"
+            android:text="사용자 모드를 선택하세요." />
+
+        <LinearLayout style="@style/LoginActivityLinearLayout">
+            <LinearLayout
+                style="@style/CommonTextViewSubjectSize5">
+                <ImageView
+                    android:src="@drawable/android"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="기기ID" />
+            </LinearLayout>
+            <TextView
+                style="@style/LoginActivityTextView2"
+                android:id="@+id/deviceId" />
+        </LinearLayout>
+        <TextView
+            style="@style/LoginActivityTextView"
+            android:text="ID는 어플리케이션 처음 구동 시 자동 생성됩니다." />
+
+        <LinearLayout style="@style/LoginActivityLinearLayout">
+            <LinearLayout
+                style="@style/CommonTextViewSubjectSize5">
+                <ImageView
+                    android:src="@drawable/key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="잠금번호" />
+            </LinearLayout>
+            <EditText
+                style="@style/LoginActivityTextView2"
+                android:hint="잠금번호를 입력하세요."
+                android:inputType="textPassword"
+                android:id="@+id/passwordInput" />
+        </LinearLayout>
+        <TextView
+            style="@style/LoginActivityTextView"
+            android:text="잠금번호는 설정메뉴에서 변경이 가능합니다." />
+
+        <Button
+            style="@style/CommonButtonMatchParentWidth"
+            android:onClick="onClick"
+            android:layout_marginTop="5dp"
+            android:text="어플리케이션 잠금 해제하기"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/submit"
+            android:elevation="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

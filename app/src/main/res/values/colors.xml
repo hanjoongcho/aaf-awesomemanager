@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#918a96</color>
+    <color name="colorPrimaryDark">#87808C</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white5F">#5FFFFFFF</color>
+    <color name="whiteEF">#EFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="black7F">#7F000000</color>
+    <color name="bg30">#307288F5</color>
+    <color name="bg70">#707288F5</color>
+    <color name="bg1_a50">#50918A96</color>
+
+    <color name="button1">#7f0000ff</color>
+    <color name="red7F">#7fff0000</color>
+
+
+    <!--Blue Theme-->
+    <color name="blueColorPrimary">#bebeef</color>
+    <color name="blueColorPrimaryDark">#7f89e2</color>
+    <color name="blueColorAccent">#2420f1</color>
+
+    <color name="color7e7676">#7e7676</color>
+    <color name="color402420f1">#402420f1</color>
+    <color name="color40918a96">#40918a96</color>
+
+    <color name="editable_text">#FF000000</color>
+    <color name="viewable_text">#FF918a96</color>
+    <color name="hint_text">#7fff0000</color>
+
+</resources>

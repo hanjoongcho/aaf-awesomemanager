@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout style="@style/CommonLinearLayoutVerticalMatchParentAll">
+
+        <LinearLayout
+            android:textColor="@color/white"
+            android:background="@drawable/rectangle_with_radius_type_d"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_title_height2">
+            <TextView
+                android:textColor="@color/white"
+                android:text="NO"
+                android:layout_width="0dp"
+                android:layout_weight=".10"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/team_attendance_normal_text"
+                android:gravity="center"
+                />
+            <TextView
+                android:textColor="@color/white"
+                android:text="이름"
+                android:layout_width="0dp"
+                android:layout_weight=".20"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/team_attendance_normal_text"
+                android:gravity="center"
+                />
+            <TextView
+                android:textColor="@color/white"
+                android:text="생년월일\n(출결알림 핸드폰)"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/team_attendance_normal_text"
+                android:gravity="center"
+                />
+            <TextView
+                android:textColor="@color/white"
+                android:text="출결"
+                android:layout_width="0dp"
+                android:layout_weight=".25"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/team_attendance_normal_text"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_with_radius_remove_padding"
+                android:id="@+id/listMember"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_with_radius"
+                android:orientation="vertical">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:popupBackground="@color/white"
+                    android:spinnerMode="dropdown"
+                    android:id="@+id/customMessageSpinner" />
+            </LinearLayout>
+
+            <Button
+                style="@style/CommonButtonMatchParentWidth"
+                android:onClick="registerAttendance"
+                android:text="출결정보 저장 및 문자발송"
+                android:id="@+id/submit" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

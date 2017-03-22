@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/CommonLinearLayoutMain"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/filterInfo"
+                android:textSize="@dimen/common_normal_text"
+                android:textColor="@color/white"
+                android:text="검색필터"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_title_height"
+                android:gravity="center_vertical|center_horizontal"
+                android:background="@drawable/rectangle_with_radius_type_d" />
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/searchArea"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:text="팀원 이름"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView4"
+                    android:layout_weight=".3" />
+                <SearchView
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:layout_weight=".7"
+                    android:id="@+id/memberSearchView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:text="팀 이름"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3" />
+                <SearchView
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:layout_weight=".7"
+                    android:id="@+id/teamSearchView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:text="기간"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3" />
+                <TextView
+                    android:onClick="onClick"
+                    android:id="@+id/startDateInput"
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="시작일"
+                    android:layout_weight=".3" />
+                <TextView
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:gravity="center"
+                    android:text="~"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1" />
+                <TextView
+                    android:onClick="onClick"
+                    android:id="@+id/endDateInput"
+                    android:textSize="@dimen/team_attendance_search_content_normal_text"
+                    android:background="@drawable/rectangle_with_radius_remove_padding"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:hint="종료일"
+                    android:layout_weight=".3" />
+            </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:onClick="onClick"
+                    android:id="@+id/toggleSearchArea"
+                    android:gravity="center"
+                    android:textSize="@dimen/team_attendance_small_text"
+                    android:text="검색필터 열기"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:onClick="onClick"
+                    android:gravity="center"
+                    android:id="@+id/enableEdit"
+                    android:textSize="@dimen/team_attendance_small_text"
+                    android:text="출결정보 변경"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:onClick="onClick"
+                    android:gravity="center"
+                    android:id="@+id/save"
+                    android:textSize="@dimen/team_attendance_small_text"
+                    android:textColor="@color/white"
+                    android:text="변경정보 저장"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_with_radius_type_d"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_title_height2">
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="NO"
+                    android:layout_width="0dp"
+                    android:layout_weight=".1"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/team_attendance_normal_text"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="이름"
+                    android:layout_width="0dp"
+                    android:layout_weight=".2"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/team_attendance_normal_text"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="출결시간\n(소속팀)"
+                    android:layout_width="0dp"
+                    android:layout_weight=".5"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/team_attendance_normal_text"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:textColor="@color/white"
+                    android:text="출결"
+                    android:layout_width="0dp"
+                    android:layout_weight=".25"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/team_attendance_normal_text"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+
+            <ListView
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_with_radius_remove_padding"
+                android:id="@+id/listMember"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </LinearLayout>
+
+</LinearLayout>
