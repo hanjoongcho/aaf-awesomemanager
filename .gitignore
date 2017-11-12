@@ -16,6 +16,7 @@
 build
 app/build
 app/*.apk
+app/release/*.apk
 app/*.iml
 .idea/misc.xml
 .idea/runConfigurations.xml

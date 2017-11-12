@@ -10,7 +10,7 @@ android {
 //    v1.0.1: 2016.10.20 / 매뉴얼 수정
 //    v1.1.0: 2016.10.25 / 사용자 정의 문자선택 기능 추가, 매뉴얼 수정
     compileSdkVersion 24
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "me.blog.korn123.awesomemanager"
         minSdkVersion 19
@@ -30,15 +30,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig getSigningConfig()
-            applicationVariants.all { variant ->
-                variant.outputs.each { output ->
-                    def date = new Date();
-                    def formattedDate = date.format('yyyyMMddHHmmss')
-                    output.outputFile = new File(output.outputFile.parent,
-                            output.outputFile.name.replace("-release", "-awesome_manager-" + formattedDate)
-                            //for Debug use output.outputFile = new File(output.outputFile.parent,
-                            //                             output.outputFile.name.replace("-debug", "-" + formattedDate)
-                    )
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "${variant.name}-${variant.versionName}.apk"
                 }
             }
         }
