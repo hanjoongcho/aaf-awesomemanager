@@ -1,5 +1,6 @@
 package me.blog.korn123.awesomemanager;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -19,6 +20,7 @@ import me.blog.korn123.awesomemanager.team.TeamAttendanceSearchActivity;
 import me.blog.korn123.awesomemanager.team.TeamAttendanceStep1Activity;
 import me.blog.korn123.awesomemanager.team.TeamSearchActivity;
 import me.blog.korn123.support.AppCompatThemeActivity;
+import me.blog.korn123.utils.DialogUtils;
 
 /**
  * Created by CHO HANJOONG on 2016-10-04.
@@ -40,8 +42,26 @@ public class IndexActivity extends AppCompatThemeActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
+        getMenuInflater().inflate(R.menu.index, menu);
         return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        DialogUtils.showAlertDialog(IndexActivity.this, "Awesome Manager를 종료하시겠습니까?",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finish();
+                    }
+                },
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                }
+        );
     }
 
     public void onClick(View v) {

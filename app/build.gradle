@@ -9,14 +9,13 @@ android {
 //    v1.0.0: 2016.10.20
 //    v1.0.1: 2016.10.20 / 매뉴얼 수정
 //    v1.1.0: 2016.10.25 / 사용자 정의 문자선택 기능 추가, 매뉴얼 수정
-    compileSdkVersion 24
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 26
     defaultConfig {
         applicationId "me.blog.korn123.awesomemanager"
         minSdkVersion 19
         targetSdkVersion 24
-        versionCode 11
-        versionName "1.1.8"
+        versionCode 12
+        versionName "1.1.9"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -32,7 +31,8 @@ android {
             signingConfig getSigningConfig()
             android.applicationVariants.all { variant ->
                 variant.outputs.all {
-                    outputFileName = "${variant.name}-${variant.versionName}.apk"
+                    def formattedDate = new Date().format('yyyyMMddHHmmss')
+                    outputFileName = "aaf-awesomemanager_${variant.versionName}_${formattedDate}.apk"
                 }
             }
         }
@@ -45,8 +45,8 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
     testCompile 'junit:junit:4.12'
 
     // apache commons dependency

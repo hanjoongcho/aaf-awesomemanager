@@ -4,26 +4,14 @@
 
 ---------------------------------------------------
 
+# Changes in 1.1.9 (date: 2017/11/14)
+  * aaf 공통스타일 적용
+
 # Changes in 1.1.8 (date: 2017/03/23)
-  [기능추가]
-
-  [기능개선]
-
-  [버그수정]
-
-  [기타]
-  1. UI Icon 라이선스정책 추가
-  2. Welcome 페이지 추가
+  * UI Icon 라이선스정책 추가
+  * Welcome 페이지 추가
 
 # Changes in 1.1.7 (date: 2017/03/20)
-
-  [기능추가]
-
-  [기능개선]
-
-  [버그수정]
-
-  [기타]
-  1. launcher icon 변경
-  2. open source license 정책 추가
+  * launcher icon 변경
+  * open source license 정책 추가
 

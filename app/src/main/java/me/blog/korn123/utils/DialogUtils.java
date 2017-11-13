@@ -200,6 +200,22 @@ public class DialogUtils {
         AlertDialog alert = builder.create();
         alert.show();
     }
+
+    public static void showAlertDialog(Context context,
+                                       String message,
+                                       DialogInterface.OnClickListener positiveListener,
+                                       DialogInterface.OnClickListener negativeListener) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+//        builder.setIcon(R.drawable.ic_launcher);
+//        builder.setTitle("일기삭제");
+        builder.setMessage(message);
+        builder.setCancelable(true);
+        builder.setNegativeButton("취소", negativeListener);
+        builder.setPositiveButton("확인", positiveListener);
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
+
     public static void showAlertDialogInAttendanceEdit(final Context context, final Activity activity, String title, String message, final ArrayAdapter<TeamAttendanceDto> mAttendanceAdapter) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         DialogInterface.OnClickListener positiveListener = new DialogInterface.OnClickListener() {

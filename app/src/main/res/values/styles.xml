@@ -1,4 +1,30 @@
 <resources>
+
+    <!--IndexActivity-->
+    <style name="IndexCategory">
+        <item name="android:background">@drawable/rectangle_with_radius_type_f</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="IndexTitle">
+        <item name="android:textSize">@dimen/index_normal_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">.7</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+    <style name="IndexItemContainer">
+        <item name="android:onClick">onClick</item>
+        <item name="android:background">@drawable/rectangle_with_radius</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/index_card_height</item>
+    </style>
+
     <!--common style-->
     <style name="CommonLinearLayoutMain">
         <item name="android:orientation">vertical</item>
@@ -7,8 +33,8 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:paddingLeft">10dp</item>
         <item name="android:paddingRight">10dp</item>
-        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
-        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
     </style>
     <style name="CommonTextViewTitle">
         <item name="android:textSize">16dp</item>
@@ -40,6 +66,7 @@
         <item name="android:layout_height">match_parent</item>
     </style>
     <style name="CommonButtonMatchParentWidth">
+        <item name="android:background">@drawable/rectangle_with_radius_type_f</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">15dp</item>

@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/CommonLinearLayoutMain"
+    android:paddingTop="0dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <ScrollView
@@ -12,13 +13,9 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:background="@drawable/rectangle_with_radius_type_f"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="30dp">
+                style="@style/IndexCategory">
                 <ImageView
-                    android:layout_marginRight="10dp"
+                    android:layout_marginRight="5dp"
                     android:layout_gravity="center"
                     android:src="@drawable/edit"
                     android:layout_width="wrap_content"
@@ -28,25 +25,16 @@
                     android:text="출결정보"
                     android:textColor="@color/white"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center_vertical|center_horizontal" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/teamAttendanceAdd"
-                android:onClick="onClick"
-                android:background="@drawable/rectangle_with_radius"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/index_card_height">
+                style="@style/IndexItemContainer"
+                android:id="@+id/teamAttendanceAdd">
                 <TextView
-                    android:textSize="@dimen/index_normal_text"
-                    android:text="출결정보 입력"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".7"
-                    android:gravity="center_vertical|center_horizontal" />
+                    style="@style/IndexTitle"
+                    android:text="출결정보 입력" />
                 <TextView
                     android:textSize="@dimen/index_small_text"
                     android:text="팀원의 출결 상태를 입력합니다."
@@ -57,20 +45,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/teamAttendanceSearch"
-                android:onClick="onClick"
-                android:background="@drawable/rectangle_with_radius"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/index_card_height">
+                style="@style/IndexItemContainer"
+                android:id="@+id/teamAttendanceSearch">
                 <TextView
-                    android:textSize="@dimen/index_normal_text"
-                    android:text="출결정보 조회"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".7"
-                    android:gravity="center_vertical|center_horizontal" />
+                    style="@style/IndexTitle"
+                    android:text="출결정보 조회" />
                 <TextView
                     android:textSize="@dimen/index_small_text"
                     android:text="팀원의 출결 상태를 조회합니다."
@@ -81,11 +60,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/rectangle_with_radius_type_f"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="30dp">
+                style="@style/IndexCategory">
                 <ImageView
                     android:layout_gravity="center"
                     android:src="@drawable/user_8"
@@ -102,25 +77,16 @@
                     android:text="팀원정보"
                     android:textColor="@color/white"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center_vertical|center_horizontal" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/memberAdd"
-                android:onClick="onClick"
-                android:background="@drawable/rectangle_with_radius"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/index_card_height">
+                style="@style/IndexItemContainer"
+                android:id="@+id/memberAdd">
                 <TextView
-                    android:textSize="@dimen/index_normal_text"
-                    android:text="팀원 등록"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".7"
-                    android:gravity="center_vertical|center_horizontal" />
+                    style="@style/IndexTitle"
+                    android:text="팀원 등록" />
                 <TextView
                     android:textSize="@dimen/index_small_text"
                     android:text="팀별 새로운 팀원을 등록합니다."
@@ -131,20 +97,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/memberSearch"
-                android:onClick="onClick"
-                android:background="@drawable/rectangle_with_radius"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/index_card_height">
+                style="@style/IndexItemContainer"
+                android:id="@+id/memberSearch">
                 <TextView
-                    android:textSize="@dimen/index_normal_text"
-                    android:text="팀원 조회"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".7"
-                    android:gravity="center_vertical|center_horizontal" />
+                    style="@style/IndexTitle"
+                    android:text="팀원 조회" />
                 <TextView
                     android:textSize="@dimen/index_small_text"
                     android:text="등록된 팀원을 등록합니다."
@@ -155,11 +112,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/rectangle_with_radius_type_f"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="30dp">
+                style="@style/IndexCategory">
                 <ImageView
                     android:layout_marginRight="10dp"
                     android:layout_gravity="center"
@@ -171,25 +124,16 @@
                     android:text="팀정보"
                     android:textColor="@color/white"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center_vertical|center_horizontal" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/teamAdd"
-                android:onClick="onClick"
-                android:background="@drawable/rectangle_with_radius"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/index_card_height">
+                style="@style/IndexItemContainer"
+                android:id="@+id/teamAdd">
                 <TextView
-                    android:textSize="@dimen/index_normal_text"
-                    android:text="팀 등록"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".7"
-                    android:gravity="center_vertical|center_horizontal" />
+                    style="@style/IndexTitle"
+                    android:text="팀 등록" />
                 <TextView
                     android:textSize="@dimen/index_small_text"
                     android:text="새로운 팀 정보를 생성합니다."
@@ -200,20 +144,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/teamSearch"
-                android:onClick="onClick"
-                android:background="@drawable/rectangle_with_radius"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/index_card_height">
+                style="@style/IndexItemContainer"
+                android:id="@+id/teamSearch">
                 <TextView
-                    android:textSize="@dimen/index_normal_text"
-                    android:text="팀 조회"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".7"
-                    android:gravity="center_vertical|center_horizontal" />
+                    style="@style/IndexTitle"
+                    android:text="팀 조회" />
                 <TextView
                     android:textSize="@dimen/index_small_text"
                     android:text="등록된 팀 정보를 조회합니다."
@@ -224,11 +159,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/rectangle_with_radius_type_f"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="30dp">
+                style="@style/IndexCategory">
                 <ImageView
                     android:layout_marginRight="10dp"
                     android:layout_gravity="center"
@@ -240,25 +171,16 @@
                     android:text="수업장소"
                     android:textColor="@color/white"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center_vertical|center_horizontal" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/playgroundAdd"
-                android:onClick="onClick"
-                android:background="@drawable/rectangle_with_radius"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/index_card_height">
+                style="@style/IndexItemContainer"
+                android:id="@+id/playgroundAdd">
                 <TextView
-                    android:textSize="@dimen/index_normal_text"
-                    android:text="수업장소 등록"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".7"
-                    android:gravity="center_vertical|center_horizontal" />
+                    style="@style/IndexTitle"
+                    android:text="수업장소 등록" />
                 <TextView
                     android:textSize="@dimen/index_small_text"
                     android:text="새로운 수업 장소를 등록합니다."
@@ -269,20 +191,11 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/playgroundSearch"
-                android:onClick="onClick"
-                android:background="@drawable/rectangle_with_radius"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/index_card_height">
+                style="@style/IndexItemContainer"
+                android:id="@+id/playgroundSearch">
                 <TextView
-                    android:textSize="@dimen/index_normal_text"
-                    android:text="수업장소 조회"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".7"
-                    android:gravity="center_vertical|center_horizontal" />
+                    style="@style/IndexTitle"
+                    android:text="수업장소 조회" />
                 <TextView
                     android:textSize="@dimen/index_small_text"
                     android:text="입력된 수업장소를 조회합니다."
@@ -293,35 +206,22 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/rectangle_with_radius_type_f"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="30dp">
+                style="@style/IndexCategory">
                 <TextView
                     android:textSize="@dimen/index_normal_text"
                     android:text="선택옵션"
                     android:textColor="@color/white"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center_vertical|center_horizontal" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/basicInformationAdd"
-                android:onClick="onClick"
-                android:background="@drawable/rectangle_with_radius"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/index_card_height">
+                style="@style/IndexItemContainer"
+                android:id="@+id/basicInformationAdd">
                 <TextView
-                    android:textSize="@dimen/index_normal_text"
-                    android:text="항목별 기본선택 정보 추가"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight=".7"
-                    android:gravity="center_vertical|center_horizontal" />
+                    style="@style/IndexTitle"
+                    android:text="항목별 기본선택 정보 추가" />
                 <TextView
                     android:textSize="@dimen/index_small_text"
                     android:text="등록 시 사용되는 기본선택 항목을 추가합니다."

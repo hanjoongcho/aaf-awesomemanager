@@ -97,9 +97,10 @@ public abstract class AppCompatThemeActivity extends AppCompatActivity {
             finish();
         } else if (id == R.id.index) {
             Intent index = new Intent(this, IndexActivity.class);
+            CommonUtils.sessionClear(index);
             startActivity(index);
-
+            finish();
         }
-            return true;
+        return true;
     }
 }
